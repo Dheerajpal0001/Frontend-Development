@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1 complete HTML Revision</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .h{
+            color: black;
+            background: greenyellow;
+        }
+        body{
+            background-color: cadetblue;
+            background: linear-gradient();
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        p{
+            background: red;
+        }
+        span{
+            background: green;
+        }
+        div{
+            background: skyblue;
+        }
+        .sec{
+            border: 5px solid black;
+            height: 50px;
+            width: 500px;
+            padding: 10px;
+            background: yellow;
+            color: blueviolet;
+        }
+        .sect{
+            /* backgrounda: yellow; */
+            color: white;
+            padding: 10px;
+            width: 50%;
+        }
+        .di{
+            background-color: aqua;
+            border: 4px solid black;
+            height: 40%;
+            width: 50%;
+        }
+        a::before{
+            background-color: red;
+        }
+        a:hover{
+            background-color: greenyellow;
+        }
+        a::after{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h">HEllo</h1>
+    <h2 class="h">HEllo</h2>
+    <h3 class="h">HEllo</h3>
+    <h4 class="h">HEllo</h4>
+    <h5 class="h">HEllo</h5>
+    <h6 class="h">HEllo</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, a deleniti saepe asperiores cupiditate ipsa voluptatem deserunt maxime fugiat sequi ut aliquid temporibus, sunt eos iusto ullam molestiae provident quibusdam voluptates! Cum modi doloribus, repellendus dolore iste eligendi ea quasi fuga ullam est sint fugit iusto in molestiae similique. Corrupti rerum ut, alias qui, asperiores impedit laudantium tempora quia magni unde obcaecati nobis corporis labore repellendus exercitationem consequuntur <span>Lorem ipsum dolor sit amet.</span> sequi dolores, sed vel nihil nulla libero repudiandae rem! Minus ullam dicta, iure ut nihil tenetur! Provident, molestiae itaque. Quidem cupiditate optio commodi reprehenderit repellendus, accusantium ut veritatis nobis, eligendi fuga rem!</p>
+    <span>span is a inline element.</span>
+    <br>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <p>paragraph is a block element</p>
+    <p>paragraph tag has default margin but div and span has not.</p>
+    <div>div is a block element</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <p></p>
+    <section class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptas in repellendus recusandae nam! Laudantium mollitia dolorem commodi odio corrupti?</section>
+    <br>
+    <div class="di">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum magnam, molestias vitae voluptate obcaecati ipsa quis! Quisquam, praesentium voluptatum?</div>
+    <section class="sect">
+        <h1>Anchor tags</h1>
+        <a href="https://google.com"  target="_blank">Google</a>
+        <p></p>
+        <a href="https://microsoft.com" target="_self">Microsoft</a>
+    </section>
+
+    <table>
+        <caption>Table</caption>
+        <thead>
+            <tr>
+                <td colspan="2">Name</td>
+                <th>Age</th>
+                <th>Roll no.</th>
+                <td colspan="2">Marks</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Akashsdfs</td>
+                <td>20</td>
+                <td>10</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td colspan="2">Akash</td>
+                <td>20</td>
+                <td>10</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td colspan="2">Akash</td>
+                <td>20</td>
+                <td>10</td>
+                <td >70</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <th colspan="4">Total Marks:</th>
+                <td>210</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <h2>Forms</h2>
+    <form action="post">
+        <div>
+            <label for="username">Enter your Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+    </form>
+<br>    
+
+    <video src="video.mp4" height="255" controls loop muted poster="download.jpg"></video>
+
+    <audio src="sachin.mp3" controls autoplay loop muted></audio>
+
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <img src="img.svg" alt="My Svg Image">
+    <br>
+    <iframe src="https://www.bing.com/search?pglt=2083&q=github&cvid=e9b4081f4f884bcab0060474879a328e&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBCDIyMTRqMGoxqAIAsAIA&FORM=ANNTA1&adppc=EDGEESS&PC=LCTS&ntref=1" width="80%" height="600px" style="padding-top: 30px; border: 2px solid black;"></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0?si=NuQZuYqrMHn7Pg-i&amp;start=739" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
