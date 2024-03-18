@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p:first-child{
+            background-color: yellow;
+            color: red;
+        }
+        div{
+            border: 2px solid black;
+        }
+        /* div p:nth-child(2){
+            background-color: blue;
+            color: white;
+        } */
+        /* p{
+            background-color: blue;
+            color: white;
+        } */
+        div p:not(:first-child){
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sunt placeat quos ratione debitis aliquam dicta, autem a! Et molestiae ipsa cum nulla eaque impedit inventore accusantium, illo sed labore unde officiis doloribus voluptatum veritatis adipisci distinctio. Dignissimos, optio quae aliquam labore id quos. Iure, ducimus repellendus. Quidem, necessitatibus assumenda.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus odit sequi quibusdam pariatur accusantium eligendi repudiandae explicabo accusamus nisi nesciunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil eveniet sequi excepturi amet debitis.</p>
+    </div>
+    <br>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sunt placeat quos ratione debitis aliquam dicta, autem a! Et molestiae ipsa cum nulla eaque impedit inventore accusantium, illo sed labore unde officiis doloribus voluptatum veritatis adipisci distinctio. Dignissimos, optio quae aliquam labore id quos. Iure, ducimus repellendus. Quidem, necessitatibus assumenda.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus odit sequi quibusdam pariatur accusantium eligendi repudiandae explicabo accusamus nisi nesciunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil eveniet sequi excepturi amet debitis.</p>
+    </div>
+</body>
+</html>

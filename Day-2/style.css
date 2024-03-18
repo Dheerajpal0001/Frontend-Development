@@ -1,0 +1,94 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+}
+.box{
+    border: 2px solid blue;
+    /* display: inline; */
+    display: inline-block;
+    width: 380px;
+    height: 18px;
+    margin: 34px;
+    padding: 45px;
+    box-shadow: 4px 7px 6px rgb(176, 205, 47);
+}
+.box1{
+    border: 2px solid blue;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 18px;
+    margin: 34px;
+    padding: 45px;
+    box-shadow: 4px 7px 6px rgb(176, 205, 47);
+}
+span{
+    box-shadow: 3px 4px 5px rgb(75, 203, 75);
+}
+
+ul{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: devanagari;
+    list-style-type: "😊";
+    list-style-position: inside;
+    border: 2px solid black;
+    background-color: orangered;
+     list-style: inside  url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); 
+     list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif/wid"); 
+     list-style: none;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     width: 400px;
+     height: 60px;
+     /* border: 1px solid black; */
+}
+.box2{
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.parent{
+    border: 1px solid black;
+    position: sticky;
+    t
+}
+.Box{
+    width: 70%;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid black;
+}
+.Box1{
+    background-color: red;
+}
+.Box2{
+    background-color: blue;
+    position: relative;
+    /* top: 70px; */
+    left: 400px;
+}
+.Box3{
+    background-color: green;
+    position: absolute;
+    top: 5px;
+}
+.Box4{
+    background-color: yellow;
+}
+.Box5{
+    background-color: pink;
+}
