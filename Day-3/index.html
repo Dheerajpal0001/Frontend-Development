@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* transform */
+        .tran{
+            margin: 100px;
+            /* transform: rotate(45deg); */
+            transform: rotate(0.25turn);
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .tran1{
+            margin: 100px;
+            transform: rotateZ(30deg) scale(1.5);
+            transition: all 0.5s ease;
+        }
+        .tran1:hover{
+            transform: scale(2);
+        }
+        .tran2{
+            /* transform: rotateX(55deg); */
+            transform: skew(34deg);
+            margin: 100px;
+        }
+        .tran3{
+            margin: 100px;
+            /* transform: translateY(100%) skew(40deg) translateX(45%); */
+            /* transform-origin: ;*/
+        }
+
+        .b{
+            width: 700px;
+            height: 600px;
+            background-color: aqua;
+            position: relative;
+        }
+        .c{
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: animateX 3s ease-out 2s infinite alternate-reverse, animateY 3s ease-out 2s infinite alternate;  */
+            animation: animateX 3s linear infinite, animateY 1s ease-out 2s infinite alternate ;
+        }
+        @keyframes animateX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes animateY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, nulla? 
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <br>
+    <h3>Float and clear</h3>
+    <div class="cards">
+        <img src=".././Day-2/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" alt="" width="200px">
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quae architecto nemo ipsam sequi cupiditate impedit esse tempora laborum et!</p></div>
+        <div class="card">card 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum ipsa labore beatae eveniet tempora explicabo ducimus optio minus corrupti cumque fugiat est in necessitatibus hic laborum quae animi veniam quam, illo rerum sequi dignissimos magnam. Excepturi ea aspernatur numquam ut voluptas odio illo aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores omnis odio perferendis voluptatem qui consequuntur quia, magni quibusdam, assumenda, dicta quam harum praesentium atque doloribus corporis enim veritatis esse amet porro reiciendis deleniti quod voluptates deserunt. Reiciendis, sit iure, odio adipisci a numquam pariatur consectetur veritatis officia, asperiores ullam sed. Id quam, architecto deleniti quas pariatur repellat nisi voluptatem. Pariatur ducimus, nemo soluta saepe eveniet similique tenetur amet maxime sed. Consectetur, inventore asperiores. Perspiciatis praesentium ab quaerat exercitationem eaque? Laborum a voluptate praesentium amet sapiente aut accusamus beatae tenetur, atque facilis aliquam molestias tempora sed aspernatur fugiat rerum, quia libero!</div>
+        <div class="card">card 3</div>
+    </div>
+<br>
+
+    <h3>flexbox</h3>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+<br>
+    <h3>Transform</h3>
+    <div class="tran" style="width: 100px; height: 100px; border: 2px solid white; background: red;">box</div>
+    <div class="tran1" style="width: 100px; height: 100px; border: 2px solid white; background: red;">box</div>
+    <div class="tran2" style="width: 100px; height: 100px; border: 2px solid white; background: red;">box</div>
+    <div class="tran3" style="width: 100px; height: 100px; border: 2px solid white; background: red;">box</div>
+
+    <br>
+    <h3>Animation</h3>
+    <div class="contain">
+        <div class="bo">box</div>
+        <div class="bo1">box</div>
+    </div>
+<br>
+<br>
+
+    <div class="b">
+        <div class="c"></div>
+    </div>
+    <br><br><br><br>
+</body>
+</html>
